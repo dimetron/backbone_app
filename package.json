@@ -1,5 +1,5 @@
 {
-  "name": "cm_rep_client_test",
+  "name": "backbone_app",
   "version": "1.0.0",
   "description": "Exapmle how to run E2E test with nightwatch",
   "author": "Dmitriy Rashko",
