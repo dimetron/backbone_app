@@ -11,13 +11,12 @@ local server is starting from current directory + src used as root.
 Installation
 -------------
 
-1. install nodejs
-2. npm install grunt-cli -g
-3. clone repository
- 
-1. cd backbone_app
-2. npm init
-3. grunt
+1. clone repository
+2. install nodejs
+3. npm install grunt-cli -g
+4. cd backbone_app
+5. npm install
+6. grunt
 
 
 

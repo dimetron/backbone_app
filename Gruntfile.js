@@ -35,11 +35,11 @@ module.exports = function(grunt) {
 		console.log(':: Usage:');
 		console.log('          grunt test');
 		console.log('          grunt test --browser=phantomjs');
+		console.log('          grunt karma');
 		console.log('          grunt server');
 	});
 
 	grunt.registerTask('test', ['connect', 'phantom-server-start', 'nightwatch', 'phantom-server-stop']);
 	grunt.registerTask('server', ['connect::keepalive']);
-	grunt.registerTask(
-		'default', ['usage']);
+	grunt.registerTask('default', ['usage']);
 };
