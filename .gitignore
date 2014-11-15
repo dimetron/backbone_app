@@ -1,0 +1,7 @@
+screenshots/*.*
+coverage
+node_modules
+*.sublime-workspace
+*.sublime-project
+*.log
+
