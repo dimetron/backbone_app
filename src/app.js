@@ -19,8 +19,6 @@ define(['underscore', 'utils', 'backbone'], function(_, Utils, Backbone) {
 
 define('app2', ['underscore', 'utils'], function(_, Utils){
 
-	console.log('Define APP2');
-
 	var App2 = function(el) {
         this.el = el;
     };

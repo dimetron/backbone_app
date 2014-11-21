@@ -1,10 +1,12 @@
 define(['underscore'], function(_) {
 
-	var moduleCount = 1;
-	console.log("Utils define")
+	var moduleCount = 0;
+
+	console.log("Utils package created")
 
 	var Utils = function() {
-		console.log("Utils constructor")
+		moduleCount++;
+		console.log("Utils object created - " + moduleCount)
 	}
 
 	Utils.prototype.getCount = function(){

@@ -19,12 +19,17 @@ define(['app', 'app2', 'utils', 'jquery', 'underscore'], function(App, App2, Uti
         it('works for underscore', function() {
             // just checking that _ works
             expect(_.size([1, 2, 3])).toEqual(3);
+            
+            var list = [[0, 1], [2, 3], [4, 5]];
+            var flat = _.reduceRight(list, function(a, b) { return a.concat(b); }, []);
+            
+            expect([4,5,2,3,0,1]).toEqual(flat);
         });
 
         it('test modules', function() {
             expect(Utils).not.toBe(null);
             expect(new Utils().getCount).toBeDefined();
-            expect(new Utils().getCount()).toBe(1);
+            expect(2).toBe(new Utils().getCount());
         });
     });
 });

@@ -41,10 +41,22 @@ module.exports = function(config) {
     },
 
 
+    nestedReporter: {
+      color: {
+        should: 'red',
+        browser: 'yellow'
+      },
+      icon: {
+        failure: '✘ ',
+        indent: 'ட ',
+        browser: ''
+      }
+    },
+
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'growl', 'coverage'],
+    reporters: ['growl', 'coverage', 'nested'],
 
 
     // web server port
